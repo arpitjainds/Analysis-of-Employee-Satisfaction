@@ -19,7 +19,6 @@ This visualization was concerned with answering the question of Why the most val
 <br><br>
 4. Insightfulness - The Plots are intuitive for ease of understanding and delivering insightful observations.<br><br>
 
-## Plots
-![Annual Rainfall](/images/annual.png?raw=true "Annual Rainfall")
-![Seasonal Rainfall](/images/phase.png?raw=true "Seasonal Rainfall")
-![Monthly Rainfall](/images/monthly.png?raw=true "Monthly Rainfall")
+## About this repository
+1. Checkout the Description folder to understand the analysis.<br>
+2. Checkout the Source folder for the code.
