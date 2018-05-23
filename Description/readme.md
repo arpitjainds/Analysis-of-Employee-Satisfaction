@@ -279,13 +279,6 @@ sns.pairplot(df, hue='left')
 ```
 
 
-
-
-    <seaborn.axisgrid.PairGrid at 0x1c155f165c0>
-
-
-
-
 ![png](output_6_1.png)
 
 
@@ -317,13 +310,6 @@ sns.jointplot(x=df['last_evaluation'], y=df['satisfaction_level'], kind='kde')
 ```
 
 
-
-
-    <seaborn.axisgrid.JointGrid at 0x1c15a817828>
-
-
-
-
 ![png](output_8_1.png)
 
 
@@ -331,12 +317,6 @@ sns.jointplot(x=df['last_evaluation'], y=df['satisfaction_level'], kind='kde')
 ```python
 sns.lmplot(data=df, x='satisfaction_level', y='average_montly_hours', size=12, hue='left')
 ```
-
-
-
-
-    <seaborn.axisgrid.FacetGrid at 0x1c15b0e4828>
-
 
 
 
@@ -348,12 +328,6 @@ sns.lmplot(data=df, x='satisfaction_level', y='average_montly_hours', size=12, h
 plt.figure(figsize=(12,8))
 sns.heatmap(df.corr(), annot=True)
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1c1544572e8>
-
 
 
 
@@ -371,13 +345,6 @@ g.map(sns.boxplot, 'time_spend_company')
     
 
 
-
-
-    <seaborn.axisgrid.FacetGrid at 0x1c15b0cfc50>
-
-
-
-
 ![png](output_11_2.png)
 
 
@@ -387,12 +354,6 @@ g.map(sns.boxplot, 'time_spend_company')
 plt.figure(figsize=(14,8))
 sns.barplot(x='time_spend_company', y = 'left', hue = 'promotion_last_5years', data = df)
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1c14ea076a0>
-
 
 
 
@@ -814,13 +775,6 @@ plt.title("Satisfaction level Distribution within salary (Left)")
 plt.legend(('Low', 'Medium','High'),loc='best')
 
 ```
-
-
-
-
-    <matplotlib.legend.Legend at 0x1c15bc655f8>
-
-
 
 
 ![png](output_47_1.png)
