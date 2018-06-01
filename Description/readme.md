@@ -282,29 +282,6 @@ sns.pairplot(df, hue='left')
 ![png](output_6_1.png)
 
 
-
-```python
-df.info()
-```
-
-    <class 'pandas.core.frame.DataFrame'>
-    RangeIndex: 14999 entries, 0 to 14998
-    Data columns (total 10 columns):
-    satisfaction_level       14999 non-null float64
-    last_evaluation          14999 non-null float64
-    number_project           14999 non-null int64
-    average_montly_hours     14999 non-null int64
-    time_spend_company       14999 non-null int64
-    Work_accident            14999 non-null int64
-    promotion_last_5years    14999 non-null int64
-    sales                    14999 non-null object
-    salary                   14999 non-null object
-    left                     14999 non-null int64
-    dtypes: float64(2), int64(6), object(2)
-    memory usage: 1.1+ MB
-    
-
-
 ```python
 sns.jointplot(x=df['last_evaluation'], y=df['satisfaction_level'], kind='kde')
 ```
@@ -340,14 +317,7 @@ g = sns.FacetGrid(df, col = 'left', size=5)
 g.map(sns.boxplot, 'time_spend_company')
 ```
 
-    C:\Users\ArpitJainMr\Anaconda3\lib\site-packages\seaborn\axisgrid.py:703: UserWarning: Using the boxplot function without specifying `order` is likely to produce an incorrect plot.
-      warnings.warn(warning)
-    
-
-
 ![png](output_11_2.png)
-
-
 
 ```python
 #time spend with promotion
@@ -355,10 +325,7 @@ plt.figure(figsize=(14,8))
 sns.barplot(x='time_spend_company', y = 'left', hue = 'promotion_last_5years', data = df)
 ```
 
-
-
 ![png](output_12_1.png)
-
 
 # Data Transformation
 
